@@ -3,50 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>CV ca nhan</title>
+    <style>
+        fieldset{
+            margin:0px auto;
+            height: 300px;
+        }
+    </style>
 </head>
-<style>
-    div {
-       padding-left: 50px;
-       padding-top: 50px;
-
-   }
-    .color {
-        background: crimson;
-        width: 750px;
-        height: 380px;
-
-    }
-    h1#content {
-        padding-left: 200px;
-    }
-
-</style>
-
 <body>
-    <div class="abc">
-        <form  class="form">
-            <fieldset class="color">
-                    <h1 id="content">SỞ THÍCH CỦA BẠN</h1>
+<form>
+    <fieldset style="width:50%">
+        <legend> <span style="color: crimson">SỞ THÍCH CÁ NHÂN</span></legend>
+        <table width="100%">
+        <tr>
+            <td align="">Học và Tên</td>
+            <td><input type="text" size="20"></td>
+            <td style="padding-left: 100px">điện thoại</td>
+            <td><input type="tel"></td>
+        </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td><input type="date"></td>
+                <td style="padding-left:50px"><input type="radio"name="gioitinh">Nam
+                    <input type="radio" name="gioitinh"> Nữ</td>
+            </tr>
+        </table>
+    </fieldset>
 
-
-                    <span class="name">Họ và tên:</span>
-                    <input class="textbox1" type="text"> <br> <br>
-                    <span> Ngày tháng</span>
-                    <INPUT type="date"> <br> <br> <br>
-                    <span class="hobby" style="position: absolute">Sở thích:</span> <br>
-                        <fieldset style="border: none">
-                            <input type="checkbox">du lịch
-                            <input type="checkbox">du lịch <br>
-                            <input type="checkbox">du lịch
-                            <input type="checkbox">du lịch <br>
-                            <input type="checkbox">du lịch
-                            <input type="checkbox">du lịch <br> <br> <br>
-                        </fieldset>
-
-                    <input type="submit" value="Gửi thông điệp">
-                    <input type="submit" value="nhập lại">
-            </fieldset>
-        </form>
-    </div>
+</form>
 </body>
 </html>

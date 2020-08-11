@@ -10,12 +10,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37a60391-ab65-4c02-9228-a7999e814a57" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMG_5398.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/module1/IMG_5398.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bang mau.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/bang mau.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luyện tâp.js" beforeDir="false" afterPath="$PROJECT_DIR$/module1/luyện tâp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luyện tập.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/luyện tập.html" afterDir="false" />
+    <list default="true" id="37a60391-ab65-4c02-9228-a7999e814a57" name="Default Changelist" comment="good">
+      <change afterPath="$PROJECT_DIR$/module1/bai tap 4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/bang nang cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/bài tap 5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/bài tập 2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/funtion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/luyen tap 3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/luyen tap 8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/luyện tập 6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/luyện tập 7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/CV ca nhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/CV ca nhan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/bang mau.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/bang mau.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/luyện tâp.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -50,6 +59,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -65,7 +75,27 @@
       <option name="presentableId" value="Default" />
       <updated>1596764671445</updated>
       <workItem from="1596764673725" duration="1413000" />
-      <workItem from="1596766349990" duration="8291000" />
+      <workItem from="1596766349990" duration="18286000" />
+      <workItem from="1596793754209" duration="1381000" />
+      <workItem from="1596810427521" duration="367000" />
+      <workItem from="1596815069285" duration="148000" />
+      <workItem from="1596849223135" duration="263000" />
+      <workItem from="1596850061957" duration="710000" />
+      <workItem from="1596874969998" duration="1576000" />
+      <workItem from="1596892802833" duration="483000" />
+      <workItem from="1596893303757" duration="672000" />
+      <workItem from="1596937078252" duration="6637000" />
+      <workItem from="1596950984808" duration="3901000" />
+      <workItem from="1596958297915" duration="3747000" />
+      <workItem from="1596964156228" duration="9867000" />
+      <workItem from="1596976008306" duration="4000" />
+      <workItem from="1596976099871" duration="32000" />
+      <workItem from="1596978840098" duration="7341000" />
+      <workItem from="1597019203558" duration="3463000" />
+      <workItem from="1597030398929" duration="8609000" />
+      <workItem from="1597063613649" duration="5760000" />
+      <workItem from="1597100613059" duration="3460000" />
+      <workItem from="1597106025164" duration="3389000" />
     </task>
     <servers />
   </component>
@@ -84,14 +114,34 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="good" />
+    <option name="LAST_COMMIT_MESSAGE" value="good" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="439" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597030419728">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="439" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1597030419728" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596766085682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596766085682" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1596768376380">
+    <state x="184" y="9" key="SettingsEditor" timestamp="1597032350338">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1596768376380" />
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597032350338" />
+    <state x="40" y="0" width="954" height="707" key="dock-window-1" timestamp="1596970396894">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="40" y="0" width="954" height="707" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1596970396894" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1597069162859">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597069162859" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597102366179">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597102366179" />
   </component>
 </project>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>NGO VAN NGOC</p>
+<select id="mySelect">
+    <option value="123"> 123</option>
+    <option value="ngay thang"> ngay thang </option>
+    <option value="so thich"> so thich </option>
+    <option value="du lich"> du lich </option>
+    <option value="tam bien"> tam bien </option>
+</select>
+
+<script>
+    var selectedElement=document.getElementById("Form");
+    selectedElement.addEventListener("change",changeFunction);
+    function changeFunction() {
+        var selectValue=document.getElementById("Form").value;
+    }
+    var selectedElement=document.getElementById("to");
+    selectedElement.addEventListener("change",changeFunction);
+    function changeFunction() {
+        var selectValue=document.getElementById("to").value;
+    }
+</script>
+</body>
+</html>

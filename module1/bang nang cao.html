@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+    <style>
+        fieldset{
+            border-style: none;
+        }
+        table{
+            width: 50%;
+        }
+        .amount{
+            width: 40%;
+            text-align: center;
+        }
+        th,td{
+            width: 15%;
+            text-align: center;
+        }
+        select{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Ứng dụng chuyển đổi tiền tệ</legend>
+        <table>
+            <thead>
+            <tr>
+                <th class="amount">Amount</th>
+                <th></th>
+                <th class="convert">From Currency</th>
+                <th></th>
+                <th class="convert">To Currency</th>
+            </tr>
+            </thead>
+            <tbody>
+            <td><label class="amount"><input type="number" id="amount" name="amount" placeholder="0, 3.7, ..."></label></td>
+            <td></td>
+            <td>
+                <label>
+                    <select id="from">
+                        <option value="VietNam" name="from">VietNam</option>
+                        <option value="USD" name="from">USD</option>
+                        <option value="Euro" name="from">EUR</option>
+                    </select>
+                </label>
+            </td>
+            <td></td>
+            <td><label>
+                <select id="to">
+                    <option value="VietNam" name="from">VietNam</option>
+                    <option value="USD" name="from">USD</option>
+                    <option value="Euro" name="from">EUR</option>
+                </select>
+            </label></td>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+<button type="button" onclick="Convert();">Convert</button>
+
+<script src="funtion.js"></script>
+</body>
+</html>
