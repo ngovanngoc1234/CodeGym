@@ -11,19 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a60391-ab65-4c02-9228-a7999e814a57" name="Default Changelist" comment="good">
-      <change afterPath="$PROJECT_DIR$/module1/bai tap 4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/bang nang cao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/bài tap 5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/bài tập 2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/funtion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/luyen tap 3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/luyen tap 8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/luyện tập 6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/luyện tập 7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/câu điều kiện 2/luyện tập 7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/câu điều kiện 2/luyện tập 8.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/CV ca nhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/CV ca nhan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/bang mau.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/bang mau.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/luyện tâp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/luyện tập 7.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +54,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\câu điều kiện 2" />
       <recent name="D:\CodeGym\module1" />
     </key>
   </component>
@@ -95,7 +87,9 @@
       <workItem from="1597030398929" duration="8609000" />
       <workItem from="1597063613649" duration="5760000" />
       <workItem from="1597100613059" duration="3460000" />
-      <workItem from="1597106025164" duration="3389000" />
+      <workItem from="1597106025164" duration="10870000" />
+      <workItem from="1597117957759" duration="84000" />
+      <workItem from="1597118121048" duration="102000" />
     </task>
     <servers />
   </component>
@@ -123,10 +117,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="439" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1597030419728" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1596766085682">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1597118221329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1596766085682" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597118221329" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1597032350338">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
