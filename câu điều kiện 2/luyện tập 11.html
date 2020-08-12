@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <fieldset style="width: 50%;margin: 0 auto">
+        <legend style="color: crimson">Số Tiền Vay Được Định hạn Mức</legend>
+        <tr>
+            <td>Mức 5000000 : lãi xuất 1%/tháng</td>
+            <br>
+            <td>Mức 10000000 : lãi xuất 5%/tháng</td>
+            <br>
+            <td>Mức 20000000 : lãi xuất 10%/tháng</td>
+            <br>
+            <td>Mức 50000000 : lãi xuất 20%/tháng</td>
+            <br>
+        </tr>
+        <p>Số Tiền</p>
+        <input type="number" value="" id="nhapso"/>
+        <button  type="button" value="KiemTra" onclick="sotien()" >Kiểm Tra</button>
+        <br> <br>
+        <p id="hienthigia" style="color: darkred" ></p>
+    </fieldset>
+    <script>
+        function sotien() {
+            let a=parseInt(document.getElementById("nhapso").value);
+            switch (a) {
+                case 5000000:
+                    document.getElementById("hienthigia").innerHTML='Lãi xuất  :'  +a*0.001;
+                    break;
+                    case 10000000:
+                        document.getElementById("hienthigia").innerHTML='Lãi xuất  :'  +a*0.005;
+                        break;
+                        case 20000000:
+                            document.getElementById("hienthigia").innerHTML='Lãi xuất  :' +a*0.01;
+                            break;
+                            case 50000000:
+                                document.getElementById("hienthigia").innerHTML='Lãi xuất   :' +a*0.1;
+                                break;
+            }
+        }
+    </script>
+</body>
+</html>

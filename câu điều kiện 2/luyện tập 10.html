@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset style="width: 50%;margin: 0 auto">
+    <legend style="color: crimson">Kiểm tra</legend>
+<input type="number" id="canha" value="">   Nhập <br> <br>
+<input type="number" id="canhb" value="">   Nhập <br> <br>
+<input type="number" id="canhc" value="">   Nhập <br> <br>
+    <button type="button" onclick="KIEMTRA()"  style="color: crimson">KIỂM TRA</button>
+    <p id="hienthi"></p>
+</fieldset>
+<script>
+    function KIEMTRA() {
+        let A=parseFloat(document.getElementById("canha").value);
+        let B=parseFloat(document.getElementById("canhb").value);
+        let C=parseFloat(document.getElementById("canhc").value);
+        if (A<0||B<0||C<0) {
+            document.getElementById("hienthi").innerHTML='Không phải là cạnh của một tam giác';
+        }  else if (A+B>C && A+C>B && C+B>A) {
+            document.getElementById("hienthi").innerHTML='cạnh của tam giác ' ;
+    }
+        }
+
+</script>
+</body>
+</html>

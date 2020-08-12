@@ -5,6 +5,25 @@
     <title>Title</title>
 </head>
 <body>
+<form>
+<script>
+    let a = parseInt(prompt());
+    if (a>0 && a<5000000) {
+        document.write('Không được doanh thu ');
+    }
+    else if (a >=5000000 && a<10000000) {
+        document.write('Được nhận 10% Tổng doanh số bán được');
+    }
+    else  if (a>=10000000 &&  a< 15000000) {
+        document.write('Dược nhận 15% Tổng doang số bán được');
+    }
+    else if (a>=15000000 && a< 20000000) {
+        document.write('Được nhận 18% Tổng doanh số bán được');
+    }  else document.write('Được nhận 25% Tổng doanh số bán được');
 
+
+</script>
+
+</form>
 </body>
 </html>

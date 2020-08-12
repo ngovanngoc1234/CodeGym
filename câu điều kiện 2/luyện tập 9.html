@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset style="width: 50%;margin: 0 auto">
+        <legend> Nhập số điện trong tháng</legend>
+        <input type="number" id="nambuer" value=""/>
+    <button type="button" onclick="sotien();"> Kết quả</button>
+    <p id="hienthi"> </p>
+</fieldset>
+<script>
+        function sotien() {
+            let a=document.getElementById("nambuer").value;
+            if (a>0 && a<50) {
+                document.getElementById("hienthi").innerHTML="Số tiền điện là   : " +a*1500;
+            } else if (a>=50 && a<100) {
+                document.getElementById("hienthi").innerHTML="Số tiền điện là   : "  +a*3000;
+            }
+        }
+
+</script>
+
+</body>
+</html>
