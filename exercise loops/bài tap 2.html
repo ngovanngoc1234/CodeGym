@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="number" value="" id="Enter">
+    <button type="button" value="submit"  id="button" onclick="chay()">Submit </button>
+    <p id="sum"> </p>
+</form>
+<script>
+    function chay()  {
+    let num = parseInt(document.getElementById("Enter").value);
+    let total = 0;
+    let i =  1;
+    for (;i<=num;i+=1) {
+        total = total +i;
+    }
+    document.getElementById("sum").innerHTML =  ''  + total;
+    }
+</script>
+</body>
+</html>

@@ -6,18 +6,21 @@
 </head>
 <body>
 <form>
+    <h> BẢNG THỐNG KÊ HƯỞNG PHẦN TRĂM DOANH SỐ</h>
+    <br>
+    <input type="number" id="id" >
 <script>
     let a = parseInt(prompt());
     if (a>0 && a<5000000) {
         document.write('Không được doanh thu ');
     }
-    else if (a >=5000000 && a<10000000) {
+    else if (a<10000000) {
         document.write('Được nhận 10% Tổng doanh số bán được');
     }
-    else  if (a>=10000000 &&  a< 15000000) {
+    else  if ( a< 15000000) {
         document.write('Dược nhận 15% Tổng doang số bán được');
     }
-    else if (a>=15000000 && a< 20000000) {
+    else if ( a< 20000000) {
         document.write('Được nhận 18% Tổng doanh số bán được');
     }  else document.write('Được nhận 25% Tổng doanh số bán được');
 

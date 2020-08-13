@@ -28,14 +28,14 @@ document.write('chiều rộng=' +b)
 document.write('<br/>')
 document.write('diện tích ='+DT)*/
 //bài tập tính tổng
-/* let a=parseInt(prompt('Hóa'));
+/*let a=parseInt(prompt('Hóa'));
 let b=parseInt(prompt('Lý'));
 let c=parseInt(prompt('Sinh học'));
 let TB=(a+b+c)/3
 let T= a+b+c;
 document.write('Tổng điểm trung bình 3 môn=' +TB);
 document.write('<br/>');
-document.write('Tổng số điểm của 3 môn=' +T);*/
+document.write('Tổng số điểm của 3 môn=' +T); */
 // bài tập tính độ C
 /* let C=parseInt(prompt('ĐỘ c'));
 let F=(9*C)/5+32;
@@ -112,7 +112,7 @@ if (a>0) {
         else er = 1;
     }
     document.getElementById("result").innerHTML = "Result: " + a * er;
-}*/
+}/*
        /* let imgObj = null;
         imgObj =  document.getElementById('myImage');
         function init() {
@@ -142,6 +142,60 @@ if (a>0) {
     }
 } */
 
+/*let a=parseInt(prompt(''));
+  let b=parseInt(prompt(''));
+  let c= a%b;
+  if (c===0) {
+      document.write('true');
+  } else {
+      document.write('false');
+  }*/
+/* let  a=parseInt(prompt(''))
+ if (a>=16) {
+     document.write('Đủ tuổi ')
+ } else {
+     document.write('không đủ tuổi')
+ } */
+
+
+
+let bg = document.getElementById("background");
+
+function changeImg(a) {
+    placeImage(a, a.id);
+}
+
+function placeImage(a, b) {
+    if (a.name == 1) {
+        a.src = "img/panda_swap_part" + b + "x1.jpg";
+        a.name = 2;
+        check(bg);
+    } else if (a.name == 2) {
+        a.src = "img/funny-cat1_part" + b + "x1.jpg";
+        a.name = 3
+        check(bg);
+    } else if (a.name == 3) {
+        a.src = "img/monkey_part" + b + "x1.jpg";
+        a.name = 1
+        check(bg);
+    }
+}
+
+function check(a) {
+    let isRight = false;
+    if (document.getElementById("1").name == document.getElementById("2").name) {
+        if (document.getElementById("2").name == document.getElementById("3").name) {
+            if (document.getElementById("3").name == document.getElementById("4").name) {
+                if (document.getElementById("4").name == document.getElementById("5").name) {
+                    isRight = true;
+                }
+            }
+        }
+    }
+    if (isRight)
+        a.style.backgroundColor = "red";
+    else a.style.backgroundColor = "white";
+}
 
 
 

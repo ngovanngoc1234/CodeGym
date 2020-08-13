@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<form content="margin: 0 auto">
+    <fieldset style="color: crimson">
+        <legend style="color: aqua">bảng quy đổi tiền tệ</legend>
+        <p>Ammout</p>
+        <input type="number"id="a" style="width: 10%">
+        <p>Form Currency</p>
+        <select id="Form" style="width: 20%" >
+            <option value="VND">VND</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+        </select>
+        <p>To Currency</p>
+        <select id="to" style="width: 20%" >
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
+            <option value="EUR">EUR</option>
+        </select> <br> <br>
+        <button type="button" onclick="Convert();">Convert</button>
+    </fieldset>
+    <script>
+        function Convert(){
+            let a = document.getElementById("a").value;
+            let From = document.getElementById("Form").value;
+            let to = document.getElementById("to").value;
+            let er;
+            if (From === "VND"){
+                if (to === "USD"){
+                    er = 1/23000;
+                }
+                else if (to === "EUR"){
+                    er = 1/26000;
+                }
+                else er = 1;
+            }
+            if (From === "USD"){
+                if (to === "VND"){
+                    er = 23000;
+                }
+                else if (to === "EUR"){
+                    er = 23/26;
+                }
+                else er = 1;
+            }
+            if (From === "EUR"){
+                if (to === "USD"){
+                    er = 26/23;
+                }
+                else if (to === "VND"){
+                    er = 26000;
+                }
+                else er = 1;
+            }
+            document.getElementById("result").innerHTML = "Result: " + a * er;
+        }
+
+    </script>
+    <p id="result"></p>
+</form>
+</body>
+</html>
