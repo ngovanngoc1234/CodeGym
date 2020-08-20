@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button spellcheck="" onclick="choi()"> chơi</button>
+<script>
+    function choi() {
+        let a = parseInt(prompt('mời nhập số a'));
+        let b = parseInt(prompt('nhập số b'));
+        let c = Math.round( Math.random()*((b-a)+a));
+        for (i = 1; i <= 3; i++) {
+            let n = parseInt(prompt('số dự đoán của bạn là '));
+            if (n == c) {
+                alert('bạn là người may mắn');
+                break;
+            } else if (i == 3) {
+                alert('bạn đã thua');
+                break;
+            } else {
+                alert('mời bạn nhập lại');
+            }
+        }
+    }
+</script>
+</body>
+</html>

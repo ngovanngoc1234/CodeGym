@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let input = parseFloat(prompt('Mời bạn nhập nhiệt dộ tại phòng'));
+    while (true) {
+        if (isNaN(input)) {
+            alert('Nhập lại số không phải chữ');
+        } else {
+            if (input < 20) {
+                alert('yêu cầu bạn tăng nhiệt độ');
+            } else if (input > 100) {
+                alert('yêu cầu bạn giảm nhiệt độ');
+            } else {
+                alert(input + ' là nhiệt độ lý tưởng');
+                break;
+            }
+        }
+        input = parseFloat(prompt('mời bạn nhập nhiệt dộ tại phòng'));
+    }
+</script>
+</body>
+</html>

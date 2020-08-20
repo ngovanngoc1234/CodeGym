@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <script>
+        let n = parseInt(prompt("Nhập số các số nguyên tố cần in ra: "));
+        let count = 0;
+        if (!isNaN(n)) {
+            for (let i = 0; count < n; i++) {
+                if (isPrime(i)) {
+                    document.write(i + " ");
+                    count++;
+                }
+            }
+        }
+        else {
+            document.write("Nhập số cơ mà, nhập thế ai mà làm được");
+        }
+        function isPrime(number){
+            let result = true;
+            if (number > 1) {
+                for (let i = 2; i <= Math.sqrt(number); i++){
+                    if (number % i == 0){
+                        result = false;
+                    }
+                }
+            }
+            else {
+                result = false;
+            }
+            return result;
+        }
+    </script>
+</table>
+</body>
+</html>

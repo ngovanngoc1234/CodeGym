@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // debugger
+    let maxNumber = parseInt(prompt('nhập bao nhiêu số fibonacci'));
+    let a = 0;
+    let b = 1;
+    let luu_gia_tri_cu = 0;
+    for (let i = 0; i <= maxNumber; i++) {
+        if (i !== 0) {
+            luu_gia_tri_cu = a + b;
+            a = b;
+            b = luu_gia_tri_cu;
+        }
+        document.write(b + '&nbsp;');
+    }
+</script>
+</body>
+</html>
