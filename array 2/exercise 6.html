@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayNumber = [];
+    let numbers = parseInt(prompt('nhap vao  so luong  phan tu'));
+    let sonhap = parseInt(prompt('kiem tra so'));
+    for (let i = 0; i < numbers; i++) {
+        arrayNumber[i] = +prompt('nhap array');
+    }
+
+    function testsNumber(num, number) {
+        let kiemtra = -1;
+        for (let i = 0; i < num.length; i++) {
+            if (number == num[i]) {
+                kiemtra = i;
+                num.splice(i, 1);
+                num[num.length] = 0;
+                console.log(num);
+                break;
+            }
+        }
+        if (kiemtra == -1) {
+            alert('khong co so nao trong array');
+        } else {
+            alert('co trong array');
+        }
+    }
+     testsNumber(arrayNumber, sonhap);
+
+</script>
+</body>
+</html>

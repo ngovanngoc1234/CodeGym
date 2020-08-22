@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hienthi"></p>
+<script>
+    let arrayNumber = [];
+    let numberss = 0;
+    let numbers = parseInt(prompt('nhap vao  so luong  phan tu'));
+    for (let i = 0; i < numbers; i++) {
+        arrayNumber[i] = +prompt('nhap array');
+    }
+
+    function arrayNegative(num) {
+        let index = 0;
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] < 0) {
+                index += 1
+            }
+        }
+        return index;
+    }
+
+    function printArray(num) {
+        let array = [];
+        for (let i = 0; i < num.length; i++) {
+            if (num[i] < 0) {
+                array.push(num[i]);
+            }
+        }
+        return array;
+    }
+
+    let mangSoAm = printArray(arrayNumber);
+    let hienthidayso = "";
+    for (let i = 0; i < mangSoAm.length; i++) {
+        hienthidayso += mangSoAm[i];
+    }
+    document.getElementById("hienthi").innerHTML = hienthidayso;
+</script>
+</body>
+</html>

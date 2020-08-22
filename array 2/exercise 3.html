@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let index = 1;
+    let arrayNumber = [];
+    for (let i = 0; i < 5; i++) {
+        arrayNumber[i] = +prompt('nha vao');
+    }
+    // document.write('so lon nhat la  :' + maxNumber(arrayNumber));
+    // function maxNumber(max) {
+    //     return Math.max.apply(null, max);
+    // }
+    function findMax(a) {
+        let max = a[0];
+        for (let i = 1; i <= a.length; i++) {
+            if (max < a[i]) {
+                max = a[i];
+                index += 1;
+
+            }
+        }
+        return max;
+    }
+
+    function number(b) {
+        let sum = 0;
+        for (let i = 0; i < b.length; i++) {
+            sum += b[i];
+        }
+        return sum / b.length;
+    }
+</script>
+</body>
+</html>

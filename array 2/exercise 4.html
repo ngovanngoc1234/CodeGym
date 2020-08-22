@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<button onclick="myFunction()"> Reverse </button>
+<script>
+    let arrayNumber = [];
+    let numbers = parseInt(prompt('nhap vao  so luong  phan tu'));
+    for (let i=0;i<numbers;i++){
+        arrayNumber[i]= +prompt('nhap array');
+    }
+    document.getElementById("show").innerHTML = arrayNumber;
+    function myFunction (){
+        arrayNumber.reverse();
+        // return arrayNumber;
+        document.getElementById("show").innerHTML = arrayNumber;
+    }
+
+</script>
+</body>
+</html>

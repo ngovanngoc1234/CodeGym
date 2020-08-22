@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayNumber = [];
+    let numbers = parseInt(prompt('nhap vao  so luong  phan tu'));
+    for (let i = 0; i < numbers; i++) {
+        arrayNumber[i] = +prompt('nhap array');
+    }
+
+    function minMaxNumber(array) {
+        for (let i = 0; i < array.length - 1; i++) {
+            for (let j = i + 1; j < array.length; j++) {
+                if (array[i] < array[j]) {
+                    let count = array[i];
+                    array[i] = array[j];
+                    array[j] = count;
+                }
+            }
+        }
+        return array;
+    }
+
+    document.write(minMaxNumber(arrayNumber));
+</script>
+</body>
+</html>

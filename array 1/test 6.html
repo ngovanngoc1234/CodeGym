@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let courses = [1, 2, 3, 4, 5, 6, 7,
+        {
+            id: 1,
+            name: 'C',
+            coin: 20,
+        },
+        {
+            id: 2,
+            name: 'C+',
+            coin: 2,
+        },
+        {
+            id: 3,
+            name: 'CSS',
+            coin: 100,
+        },
+        {
+            id: 4,
+            name: 'ruby',
+            coin: 300,
+        },
+        {
+            id: 5,
+            name: 'PHP',
+            coin: 500,
+        },
+        {
+            id: 6,
+            name: 'java',
+            coin: 700,
+        },
+    ];
+    courses.forEach(function (index) {
+        document.write(index);
+    });
+    // for (let i = 0; i < courses.length; i++) {
+    //     console.log(courses[i].id + ',' + courses[i].name + ',' + courses[i].coin);
+    // }
+    //
+    // function courseHandler(courses, index) {
+    //     // console.log(courses);
+    //     return {
+    //         id: courses.id,
+    //         name: ` Khoa hoc: ${courses.name}`,
+    //         coin: courses.coin,
+    //         coinText: `gia : ${courses.coin}`,
+    //         index: index,
+    //     };
+    // }
+    //
+    // let newCourses = courses.map(courseHandler);
+    // console.log(newCourses);
+</script>
+</body>
+</html>
