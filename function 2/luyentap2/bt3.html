@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function maxMinNumber() {
+        let a = +prompt('nhap so a');
+        let b = +prompt('nhap so b');
+        let c = +prompt('nhap so c');
+        let min = a;
+        for (let i = 0; i <= 3; i++) {
+            if (min > b) {
+                min = b;
+            } else if (min > c) {
+                min = c;
+            }
+        }
+        return min;
+    }
+document.write('số nhỏ nhất :  '+maxMinNumber());
+</script>
+</body>
+</html>

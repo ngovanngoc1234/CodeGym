@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" oninput="diameterCircle(this.value)" placeholder="Nhập Bán Kính ">
+<p id="c"></p>
+<script>
+    function diameterCircle (num){
+        let Cv=2*num*Math.PI
+        return document.getElementById("c").innerHTML=Cv;
+    }
+</script>
+</body>
+</html>

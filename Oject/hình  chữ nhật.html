@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hình chữ nhật</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        canvas {
+            background: #eee;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" width="700" height="600"></canvas>
+<script>
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext('2d');
+    let a = +prompt('nhap');
+    let b = +prompt('nhap');
+    ctx.rect(30, 40, a, b);
+    ctx.fillStyle = "#FF0000";
+    ctx.fill();
+
+    function avgMax(x, y) {
+        this.x = x;
+        this.y = y;
+        this.getAvg = function () {
+            return this.x * this.y;
+        }
+        this.getAvc = function () {
+            return (this.x + this.y) * 2;
+        }
+    }
+
+    let min = new avgMax(a, b);
+    alert(min.getAvg());
+    alert(min.getAvc());
+</script>
+</body>
+</html>

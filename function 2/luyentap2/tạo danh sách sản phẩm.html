@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>danh dách sản phẩm</title>
+</head>
+<body>
+<input type="text" id="12">
+<button value="" onclick="show()">Submit</button>
+<div id="123"></div>.
+<script>
+    let arr = [];
+
+    function show() {
+        arr.push(document.getElementById('12').value);
+        showAllPro();
+        document.getElementById('12').value='';
+    }
+
+    function showAllPro() {
+        let text = '<table>';
+        for (let i = 0; i < arr.length; i++) {
+            text += "<tr><td>"+arr[i]   +"</td></tr>";
+        }
+        text+="</table>"
+        document.getElementById('123').innerHTML=text;
+    }
+</script>
+</body>
+</html>

@@ -8,29 +8,29 @@
 <script>
     let arrayNumber = [];
     let numbers = parseInt(prompt('nhap vao  so luong  phan tu'));
-    let sonhap = parseInt(prompt('kiem tra so'));
+    let numberses = parseInt(prompt('kiem tra so'));
     for (let i = 0; i < numbers; i++) {
         arrayNumber[i] = +prompt('nhap array');
     }
 
     function testsNumber(num, number) {
-        let kiemtra = -1;
+        let checkNumber = -1;
         for (let i = 0; i < num.length; i++) {
             if (number == num[i]) {
-                kiemtra = i;
+                checkNumber = i;
                 num.splice(i, 1);
                 num[num.length] = 0;
                 console.log(num);
                 break;
             }
         }
-        if (kiemtra == -1) {
+        if (checkNumber == -1) {
             alert('khong co so nao trong array');
         } else {
             alert('co trong array');
         }
     }
-     testsNumber(arrayNumber, sonhap);
+     testsNumber(arrayNumber, numberses);
 
 </script>
 </body>

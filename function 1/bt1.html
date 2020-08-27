@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>
+        <label> Fahrenheit</label>
+        <input type="number" id="input" placeholder="Fahrenheit"
+               oninput="converter(this.value)"
+               onchange="converter(this.value)">
+    </p>
+    <p>Celsius : <span id="show"></span></p>
+</form>
+<script>
+    function converter(valNum) {
+        if (valNum != "") {
+            valNum = parseFloat(valNum);
+            document.getElementById("show").innerHTML = (valNum - 32);
+        } else {
+            document.getElementById("show").innerHTML = "";
+
+        }
+    }
+</script>
+</body>
+</html>

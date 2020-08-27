@@ -10,12 +10,12 @@
     let Arr = [];
     let numbers = parseInt(prompt('nhap vao so luong array 1 :'));
     let number = +prompt('nhap vao so luong array 2');
-    for (let i = 0; i < number; i++) {
-        Arr[i] = +prompt('nhap array 2 :');
-    }
-
     for (let i = 0; i < numbers; i++) {
         arrayNumber[i] = +prompt('nhap array 1 :');
+    }
+
+    for (let i = 0; i < number; i++) {
+        Arr[i] = +prompt('nhap array 2 :');
     }
     let allArray = [];
     for (let i = 0; i < arrayNumber.length; i++) {
@@ -24,7 +24,6 @@
     for (let i = arrayNumber.length, j = 0; i < (arrayNumber.length) + (Arr.length); i++, j++) {
         allArray[i] = Arr[j];
     }
-    // let allArray = arrayNumber.concat(Arr);
     console.log(allArray);
 
 

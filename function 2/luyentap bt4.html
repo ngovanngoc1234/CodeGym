@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="check">
+<button onclick="onClick()"> Submit</button>
+<p id="num"></p>
+<script>
+    let ngoisao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let chomsao = ['Ursa', 'Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa', 'Major', 'Leo'];
+
+    function allArray(num) {
+        let check = document.getElementById("check").value;
+        let indexof = -1
+        for (let i = 0; i < num.length; i++) {
+            if (check === num[i]) {
+                indexof = i;
+                break;
+            }
+        }
+        return indexof;
+    }
+
+    function onClick() {
+document.getElementById("num").innerHTML = chomsao[allArray(ngoisao)];
+    }
+</script>
+</body>
+</html>

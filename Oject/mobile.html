@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <fieldset>
+        <legend>NOKIA</legend>
+        <input type="text" id="nhap" style="text-align: center"/>
+        <button type="button" onclick="">Nokia</button>
+        <br>
+        <br>
+        <button type="button"> Sent</button>
+        <p id="123"></p>
+    </fieldset>
+
+</div>
+<div>
+    <fieldset>
+        <legend>IPHONE</legend>
+        <input type="text" id="nhap1">
+        <button type="button" onclick=""> Iphone</button>
+        <br>
+        <br>
+        <button type="button">Sent</button>
+        <p id="124"></p>
+
+    </fieldset>
+</div>
+
+<script>
+    let MobilePhone = function (name, battery) {
+        this.name = name;
+        this.battery = battery;
+        this.editMess = [];
+        this.inboxMess = [];
+        this.sentMess = [];
+        this.isOn = true;
+        this.btnPower = function () {
+            this.isOn = false;
+        }
+        this.reCharge = function (battery) {
+            this.battery = 100;
+        }
+        this.writeMess = function (mess) {
+            this.editMess.push(mess);
+            battery--;
+        }
+        this.receiveMess = function (mess) {
+            this.inboxMess.push(mess);
+            battery--;
+        }
+        this.sendMess = function (otherPhone) {
+            let mess = this.editMess.pop();
+            otherPhone.receiveMess(mess);
+            battery--;
+        }
+        this.showInboxMess = function () {
+            battery--;
+            if (this.inboxMess.length === 0) {
+                return "Nothing"
+            }
+            let im = "";
+            for (let i = 0; i < this.inboxMess.length; i++) {
+                im += this.inboxMess[i];
+            }
+            return im;
+        }
+        this.showSentMess = function () {
+            battery--;
+            if (this.sentMess.length === 0) {
+                return "Nothing"
+            }
+            let sm = "";
+            for (let i = 0; i < this.sentMess.length; i++) {
+                sm += this.sentMess[i] + "<br>"
+            }
+            return sm;
+        }
+    }
+    let nokia = new MobilePhone("Nokia", 100);
+    let iphone = new MobilePhone("Iphone", 100);
+    if (nokia.battery === 0) {
+        nokia.reCharge();
+    }
+    if (iphone.battery === 0) {
+        iphone.reCharge();
+    }
+    if (nokia.isOn === false) {
+        nokia.btnPower()
+    }
+    if (iphone.isOn === false) {
+        nokia.btnPower()
+    }
+    nokia.receiveMess(iphone)
+</script>
+</body>
+</html>

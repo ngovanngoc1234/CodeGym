@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+</head>
+<body>
+<input type="number"  oninput="numberse(this.value)">
+<p id="shows" ></p>
+<script>
+    function numberse (num){
+        return document.getElementById("shows").innerHTML = num*num;
+    }
+
+</script>
+</body>
+</html>
